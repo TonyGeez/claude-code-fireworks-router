@@ -1,0 +1,54 @@
+{
+  "name": "claude-code-fireworks-router",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A lightweight proxy that allows Claude Code to use the Fireworks.ai API without the 5K token streaming limitation.",
+  "bin": {
+    "ccf": "./dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "fireworks",
+    "ai",
+    "proxy",
+    "llm"
+  ],
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "build": "tsc && echo '{\"type\":\"module\"}' > dist/package.json",
+    "start": "node dist/index.js",
+    "start:ts": "tsx index.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyGeez/claude-code-fireworks-router.git"
+  },
+  "author": "TonyGeez (Antoine R.)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TonyGeez/claude-code-fireworks-router/issues"
+  },
+  "homepage": "https://github.com/TonyGeez/claude-code-fireworks-router#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3",
+    "@inquirer/prompts": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
