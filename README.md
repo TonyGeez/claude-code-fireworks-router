@@ -25,7 +25,7 @@ npm install -g @anthropic-ai/claude-code
 
 2. Install claude-code-fireworks:
 ```bash
-npm install -g claude-code-fireworks
+npm install -g claude-code-fireworks-router
 ```
 
 3. Run ccf once to create the configuration directory:
