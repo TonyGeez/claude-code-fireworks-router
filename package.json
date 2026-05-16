@@ -1,8 +1,8 @@
 {
-  "name": "claude-code-fireworks-router",
-  "version": "1.0.0",
+  "name": "claude-code-fireworks",
+  "version": "1.2.6",
   "type": "module",
-  "description": "A lightweight proxy that allows Claude Code to use the Fireworks.ai API without the 5K token streaming limitation.",
+  "desscription": "Use any Fireworks.ai model with Claude Code.",
   "bin": {
     "ccf": "./dist/cli.js"
   },
@@ -16,28 +16,26 @@
     "claude",
     "claude-code",
     "fireworks",
-    "ai",
-    "proxy",
-    "llm"
+    "fireworks-claude-code",
+    "fireworks-claude"
   ],
   "scripts": {
     "dev": "tsx watch index.ts",
     "build": "tsc && echo '{\"type\":\"module\"}' > dist/package.json",
     "start": "node dist/index.js",
     "start:ts": "tsx index.ts",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm run clean && npm run build"
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TonyGeez/claude-code-fireworks-router.git"
+    "url": "git+https://github.com/TonyGeez/claude-code-fireworks.git"
   },
   "author": "TonyGeez (Antoine R.)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TonyGeez/claude-code-fireworks-router/issues"
+    "url": "https://github.com/TonyGeez/claude-code-fireworks/issues"
   },
-  "homepage": "https://github.com/TonyGeez/claude-code-fireworks-router#readme",
+  "homepage": "https://github.com/TonyGeez/claude-code-fireworks#readme",
   "engines": {
     "node": ">=18.0.0"
   },
